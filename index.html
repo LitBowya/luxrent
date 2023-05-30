@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxrent</title>
+
+  <!-- Importing Styles -->
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Ion Icon -->
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- AOS animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Header Starts -->
+  <!-- Navbar Starts -->
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 mx-2 fs-1 text-white">lux<span class="fw-bold">Rent</span></span>
+      <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bi bi-list fs-3"></span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="./index.html" aria-current="page">home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./Explore/explore.html">explore</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./about.html">about us</a>
+          </li>
+        </ul>
+        <div class="account">
+          <ul class="d-flex align-items-center justify-content-evenly mb-0 fs-4">
+            <li class="mx-2"><a href="./Account/login.html" class="">login</a></li>
+            <li class="mx-2 btn p-2"><a href="./Account/register.html" class="fw-bold">Register</a></li>
+            <li><img src="./Images/Homepage/images (5).jpeg" alt="" width="50px" height="50px" class="rounded-circle"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"></li>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mine</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="image d-flex justify-content-center">
+                      <img src="./Images/Homepage/images (5).jpeg" alt="" width="200px" height="200px"
+                        class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-between">
+                    <div class="left">
+                      <button type="button" class="btn"><a class="text-white" href="./history.html">History</a></button>
+                    </div>
+                    <div class="right">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary"><a class="text-white"
+                          href="./Account/account.html">Profile</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Ends -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <header class="text-center px-auto">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Images/Homepage/cheapest-ways-to-rent-a-car.jpeg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-block p-0">
+            <h5 class="m-0">Ready For An Adventure</h5>
+            <p>Book</p>
+            <div class="btn btn1"><a href="./Explore/explore.html">Now</a></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/Homepage/givetowoman.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-block p-0">
+            <h5 class="m-0">Bring A Smile</h5>
+            <p>To Her Face</p>
+            <div class="btn btn2"><a href="./Explore/explore.html">Today</a></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/Homepage/giveyou.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption d-block p-0">
+            <h5 class="m-0">Wanting To Cruise??</h5>
+            <p class="">This Is Your</p>
+            <div class="btn btn3"><a href="./Explore/explore.html">Hour</a></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <!-- Header Ends -->
+
+  <!-- Main Starts -->
+  <main class="">
+    <!-- About Us Starts -->
+    <section class="about-us mx-auto mb-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="img d-flex justify-content-center" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img class="img-fluid w-75" src="./Images/Homepage/CPO-BuickGMC-Models.png" alt="">
+          </div>
+          <h4 class="text-center h1">Welcome to lux<span style="color:orangered" data-aos="flip-left"
+              data-aos-duration="2000">Rent</span></h4>
+          <div class="misson mb-4">
+            <p class="w-75 mx-auto text-center">
+              At LuxRent, our mission is to provide our customers with
+              a luxurious and hassle-free car rental experience.
+              We strive to deliver exceptional customer service and offer a
+              wide range of high-quality vehicles to meet our clients' needs.
+              Our vision at LuxRent is to become the leading provider of luxury car
+              rentals worldwide. We aim to exceed our customers' expectations by
+              consistently delivering outstanding service and a premium rental experience.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="content">
+              <div class="icon"><i class="bi bi-headset"></i></div>
+              <div class="info">
+                <h5>24/7 CAR RENTAL SUPPORT</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1500">
+            <div class="content">
+              <div class="icon"><i class="bi bi-car-front-fill"></i></div>
+              <div class="info">
+                <h5>CAR RESERVATION ANYTIME</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="content">
+              <div class="icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="info">
+                <h5>LOTS OF PICKUP LOCATIONS</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Ends -->
+
+    <!-- Other Services -->
+    <section class="other-services">
+      <div class="container">
+        <div class="services pt-5">
+          <div class="head text-left">
+            <p class="text-mute m-0 fs-4">Services</p>
+            <h3 class="h1 m-0 pe-auto">CHECK OUT OUR SERVICES</h3>
+          </div>
+          <div class="row py-5">
+            <div class="col-lg-4 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="300">
+              <div class="content">
+                <div class="icon"><i class="fa-solid fa-truck fa-beat-fade"></i></div>
+                <h4>Delivery</h4>
+                <p>We provide door-to-door delivery, ensuring that your goods is brought directly to your desired
+                  location</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="500">
+              <div class="content">
+                <div class="icon"><i class="fa-solid fa-city fa-flip"></i></div>
+                <h4> City Tour</h4>
+                <p>Explore the city with our guided city tours, allowing you to experience the sights and sounds
+                  hassle-free</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="700">
+              <div class="content">
+                <div class="icon"><i class="fa-solid fa-screwdriver-wrench fa-spin"></i></div>
+                <h4>Car Repairs</h4>
+                <p>In case of any car repairs, our team of experts is readily available to address any issues promptly
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="300">
+              <div class="content">
+                <div class="icon"><i class="fa-solid fa-plane fa-shake"></i></div>
+                <h4>Airport Travel</h4>
+                <p>We also offer seamless airport travel, ensuring a smooth transition to and from your destination</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="500">
+              <div class="content">
+                <div class="icon"><i class="fa-solid fa-handshake-angle fa-beat"></i></div>
+                <h4>Car Consultancy</h4>
+                <p>Additionally, our car consultancy services provide valuable advice and assistance for your automotive
+                  needs</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-duration="700">
+              <div class="content">
+                <div class="icon"><i class="fa-solid fa-screwdriver fa-bounce"></i></div>
+                <h4>Car Maintenance</h4>
+                <p>Trust us for comprehensive car maintenance, ensuring that your vehicle stays in top-notch condition
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleets Starts -->
+    <section class="fleets py-5 mb-5">
+      <div class="container">
+        <div class="head">
+          <p class=" fs-4 m-0">Our Fleets</p>
+          <h3 class="h1 m-0">MOST RENTED</h3>
+        </div>
+        <div class="cars owl-carousel py-5">
+
+          <div class="card my-3" data-aos="flip-up" data-aos-duration="500">
+            <div class="img">
+              <img src="./Images/Sport/sp1.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Toyota GR68</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">Japan</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/Sports/sp1.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" data-aos="flip-down" data-aos-duration="1000">
+            <div class="img">
+              <img src="./Images/SUV/sv1.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tata Nexon</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">India</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/SUV/sv1.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" data-aos="flip-up" data-aos-duration="500">
+            <div class="img">
+              <img src="./Images/Trucks/pk1.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ford Ranger</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">USA</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/Trucks/pk1.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" data-aos="flip-down" data-aos-duration="1000">
+            <div class="img">
+              <img src="./Images/Vintage/vn1.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Mercedes-Benz 300 SL</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">Germany</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/Vintage/vn1.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container">
+        <h3 class="my-5 pt-5 h1">NEW CRUISE</h3>
+        <div class="cars new-cruise owl-carousel">
+
+          <div class="card my-3" data-aos="flip-down" data-aos-duration="1000">
+            <div class="img">
+              <img src="./Images/Vintage/vn2.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aston Martin DB5</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">London</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/Vintage/vn2.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" data-aos="flip-up" data-aos-duration="500">
+            <div class="img">
+              <img src="./Images/Trucks/pk2.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nissan Santa Cruz</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">Japan</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/Trucks/pk2.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" data-aos="flip-down" data-aos-duration="1000">
+            <div class="img">
+              <img src="./Images/SUV/sv2.webp" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Range Rover Evoque</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">England</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/SUV/sv2.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" data-aos="flip-up" data-aos-duration="500">
+            <div class="img">
+              <img src="./Images/Sport/sp2.webp" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">McLaren 570S</h5>
+              <p class="card-text">
+              <div class="year d-flex justify-content-between">
+                <p class="years">Year</p>
+                <p class="year-made">2001</p>
+              </div>
+              <div class="country d-flex justify-content-between">
+                <p class="nation">Country</p>
+                <p class="origin">England</p>
+              </div>
+              </p>
+              <div class="details d-flex justify-content-end align-items-center">
+                <a href="./Cars info/Sports/sp2.html">
+                  <div class="btn">See Details</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <a href="./Explore/explore.html" class="text-decoration-none">
+        <p class="fs-4 text-center pt-3 see-more">see more</p>
+      </a>
+    </section>
+    <!-- Fleet Ends -->
+
+    <!-- Testimonial Starts -->
+    <section class="testimonials py-5 mb-5">
+      <div class="container">
+        <p class="fs-4 m-0">Testimonials</p>
+        <h3 class="h1 m-0 p-0">What Other People Say About Us</h3>
+        <div id="carouselExampleIndicators" class="carousel slide py-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-item">
+                <img src="./Images/Homepage/download (2).jpeg" class="testimonial-img" alt="">
+                <h3>Sarah Thompson</h3>
+                <p>
+                  Booking with LuxRent was a breeze! Their website is user-friendly, and I found the perfect luxury car
+                  in no time. The customer service was excellent, and the pick-up and drop-off process were seamless. I
+                  highly recommend LuxRent for a hassle-free car rental experience
+                </p>
+                <div class="icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item">
+                <img src="./Images/Homepage/images (6).jpeg" class="testimonial-img" alt="">
+                <h3>Jessica Davis</h3>
+                <p>
+                  I had a fantastic experience with LuxRent. Their website was easy to navigate, and I rented a
+                  luxurious car at a competitive price. The staff was friendly and professional, making the entire
+                  process smooth and enjoyable. I highly recommend LuxRent for your next car rental
+                </p>
+                <div class="icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item">
+                <img src="./Images/Homepage/images.jpeg" class="testimonial-img" alt="">
+                <h3>John Smith</h3>
+                <p>
+                  LuxRent delivered a top-notch car rental service. Their website was user-friendly, and I found the
+                  perfect vehicle quickly. The customer service was exceptional, and the car was in great condition. I
+                  highly recommend LuxRent for a reliable and enjoyable car rental experience
+                </p>
+                <div class="icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Ends -->
+
+  </main>
+  <!-- Main Ends -->
+
+
+  <!-- Footer Starts -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container py-5">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-twitter"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" placeholder="Email Address" class="form-control" />
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Links -->
+      <section class="pt-3">
+        <div class="row d-flex justify-content-evenly w-75 mx-auto">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h4 class="text-uppercase fw-bolder">Tabs</h4>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="../index.html" class="text-white">Home</a>
+              </li>
+              <li>
+                <a href="./Explore/explore.html" class="text-white">Explore</a>
+              </li>
+              <li>
+                <a href="./Blog/blog.html" class="text-white">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h4 class="text-uppercase fw-bolder">Useful Links</h4>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="./Account/register.html" class="text-white">Register</a>
+              </li>
+              <li>
+                <a href="./Account/login.html" class="text-white">Login</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h4 class="text-uppercase fw-bolder">Contact Info</h4>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="bi bi-house"></i><a href="#!" class="text-white">GN-456-087</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone"></i><a href="#!" class="text-white">+233 59 7890 876</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone"></i><a href="#!" class="text-white">+233 59 7890 876</a>
+              </li>
+              <li>
+                <i class="bi bi-whatsapp"></i><a href="#!" class="text-white">+233 59 7890 876</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <h4 class="text-white text-center">luxRent</h4>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
+
+
+
+
+
+
+
+
+  <div class="back-to-top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </div>
+
+  <!-- Importing Scripts -->
+
+  <!-- Ion Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.0/ionicons.min.js"></script>
+
+  <!-- Owl Carousel -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- AOS animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- My Script -->
+  <script src="app.js" type="text/javascript"></script>
+
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

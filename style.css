@@ -1,0 +1,404 @@
+/* Default */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: orangered;
+	color: white;
+	cursor: pointer;
+	padding: 1.25em;
+	border-radius: 10px;
+	font-size: 18px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+#myBtn:hover {
+	background-color: rgb(0, 153, 255);
+}
+
+/* Navbar */
+nav .navbar-toggler {
+	color: white !important;
+}
+
+nav .navbar-brand span {
+	color: orangered;
+}
+
+nav ul li a {
+	color: white !important;
+	transition: .5s !important;
+	-webkit-transition: .5s !important;
+	-moz-transition: .5s !important;
+	-ms-transition: .5s !important;
+	-o-transition: .5s !important;
+}
+
+nav ul li a:hover {
+	color: orangered !important;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+}
+
+nav .account li {
+	list-style: none;
+}
+
+nav .account .btn {
+	background-color: orangered;
+	color: white;
+}
+
+nav .account .btn:hover {
+	background-color: rgb(0, 153, 255);
+}
+
+nav .account .btn a:hover {
+	color: white !important;
+	letter-spacing: normal;
+}
+
+nav .account a {
+	color: black;
+	text-decoration: none;
+}
+
+nav a.active {
+	color: orangered !important;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+}
+
+/* Header */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: black;
+	overflow: hidden;
+}
+
+header img {
+	position: relative;
+	width: 100vw;
+	object-fit: cover;
+	opacity: 0.4;
+}
+
+header .carousel-caption {
+	position: absolute;
+	top: 30%;
+}
+
+@media (max-width:450px) {
+	header .carousel-caption {
+		position: absolute;
+		top: 20%;
+	}
+
+}
+
+@media (min-width:1024px) {
+	header .carousel-caption {
+		font-size: 4.5rem;
+	}
+
+	header .carousel-caption .btn {
+		font-size: 2rem;
+	}
+
+}
+
+header .carousel-item h5 {
+	font-size: 80%;
+}
+
+header .carousel-item p {
+	margin: 0;
+}
+
+header .btn a {
+	text-decoration: none;
+	color: white;
+}
+
+header .btn1 {
+	background-color: orangered;
+}
+
+header .btn1:hover {
+	background-color: rgb(0, 107, 179);
+}
+
+header .btn2 {
+	background-color: rgb(0, 153, 255);
+}
+
+header .btn2:hover {
+	background-color: gray;
+}
+
+header .btn3 {
+	background-color: gray;
+}
+
+header .btn3:hover {
+	background-color: orangered;
+}
+
+/* Main Style */
+main p.fs-4 {
+	color: orangered;
+}
+
+main .misson p {
+	font-size: 18px;
+}
+
+main .about-us .content {
+	cursor: pointer;
+	padding: 1.25em 0;
+	background-color: rgb(0, 153, 255);
+	display: flex;
+	align-items: center;
+}
+
+main .about-us .content:hover {
+	background-color: rgb(0, 107, 179);
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+main .about-us .icon {
+	padding: 25px;
+	background-color: orangered;
+	color: white;
+}
+
+main .about-us .icon .bi {
+	font-size: 2rem;
+}
+
+main .about-us .info h5 {
+	padding: 0 .75em;
+	font-weight: 600;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1.5rem;
+}
+
+main .other-services .services .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px 20px;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	cursor: pointer;
+}
+
+main .other-services .services .content:hover {
+	box-sizing: border-box;
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.086);
+	transform: scale(1.5);
+	-webkit-transform: scale(1.085);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+}
+
+main .other-services .services .content .icon {
+	background-color: rgb(255, 132, 0);
+	padding: 1.5em;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+main .other-services .services .content .fa-solid {
+	font-size: 1.75rem;
+	color: black;
+}
+
+main .other-services .services .content h4 {
+	margin: 15px 0;
+}
+
+main .other-services .services .content p {
+	color: gray;
+	text-align: center;
+}
+
+main .fleets {
+	background-color: #f9f9f9;
+}
+
+main .fleets .container {
+	width: 100%;
+	margin: auto;
+	padding: 0 15px;
+}
+
+main .fleets .card {
+	padding: 10px;
+	margin: 0 15px !important;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+}
+
+main .fleets .card:hover {
+	padding: 0;
+	box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.486) !important;
+}
+
+main .fleets .card .btn {
+	background-color: rgb(0, 153, 255);
+	color: white;
+}
+
+main .fleets .card .btn:hover {
+	background-color: orangered;
+}
+
+main .fleets .card .img img {
+	height: 200px;
+}
+
+main .fleets .owl-dots {
+	text-align: center;
+	margin-top: 30px;
+}
+
+main .fleets .owl-dots button {
+	background-color: rgb(0, 153, 255) !important;
+	width: 15px;
+	height: 15px;
+	border-radius: 26px;
+	-webkit-border-radius: 26px;
+	-moz-border-radius: 26px;
+	-ms-border-radius: 26px;
+	-o-border-radius: 26px;
+	margin: 0 5px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+main .fleets .owl-dots button.active {
+	width: 25px;
+	background-color: orangered !important;
+}
+
+main .fleets .see-more:hover {
+	color: rgb(0, 153, 255);
+	text-decoration: underline;
+}
+
+main .testimonials {
+	background-color: rgba(0, 0, 0, 0.859);
+}
+
+main .testimonials .testimonial-item {
+	text-align: center;
+	color: white;
+}
+
+main .testimonials h3 {
+	color: white;
+}
+
+main .testimonials .testimonial-item .testimonial-img {
+	width: 100px;
+	border-radius: 50%;
+	border: 6px solid white;
+	margin: 0 auto;
+	height: 150px;
+	width: 150px;
+}
+
+main .testimonials .testimonial-item h3 {
+	margin: 15px 0;
+	color: white;
+}
+
+main .testimonials .testimonial-item p {
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	font-style: italic;
+	color: white;
+	font-size: 18px;
+}
+
+main .testimonials .carousel-indicators {
+	position: relative;
+}
+
+main .testimonials .icons {
+	width: 100%;
+	margin: 10px
+}
+
+main .testimonials .icons .bi {
+	text-align: center;
+	font-size: 25px;
+	color: rgb(0, 107, 179);
+}
+
+/* Footer Style */
+footer li, footer h4 {
+	text-align: left !important;
+}
+
+footer li {
+	font-size: 1.25rem;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+footer li:hover {
+	letter-spacing: 2px;
+	color: orangered !important;
+}
+
+footer li a {
+	text-decoration: none;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+}
+
+footer li a:hover {
+	letter-spacing: 2px;
+	color: orangered !important;
+}

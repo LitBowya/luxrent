@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar */
+nav .navbar-toggler {
+	color: white !important;
+}
+
+nav .navbar-brand span {
+	color: orangered;
+}
+
+nav ul li a {
+	color: white !important;
+	transition: .5s !important;
+	-webkit-transition: .5s !important;
+	-moz-transition: .5s !important;
+	-ms-transition: .5s !important;
+	-o-transition: .5s !important;
+}
+
+nav ul li a:hover {
+	color: orangered !important;
+	letter-spacing: 5px;
+	text-transform: capitalize;
+}
+
+nav .account li {
+	list-style: none;
+}
+
+nav .account .btn {
+	background-color: orangered;
+	color: white;
+}
+
+nav .account .btn:hover {
+	background-color: rgb(0, 153, 255);
+}
+
+nav .account .btn a:hover {
+	color: white !important;
+	letter-spacing: normal;
+}
+
+nav .account a {
+	color: black;
+	text-decoration: none;
+}
+
+main .content-container .image img{
+    height: 350px;
+}
+
